@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Приложение о погоде</string>
+    <string name="city">Нижний Новгород</string>
+    <string name="unitsTemp">⁰Ц</string>
+    <string name="minTemp">От</string>
+    <string name="maxTemp">До</string>
+    <string name="realFeelTemp">Ощущается как:</string>
+</resources>
