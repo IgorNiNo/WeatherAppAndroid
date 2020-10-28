@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Weather App</string>
     <string name="city">Nizhny Novgorod</string>
-    <string name="unitsTemp">⁰С</string>
-    <string name="minTemp">From</string>
-    <string name="maxTemp">To</string>
+    <string name="currentTemp">10 ⁰С</string>
+    <string name="minTemp">From -1 ⁰С</string>
+    <string name="maxTemp">To 14 ⁰С</string>
     <string name="separator" translatable="false">|</string>
-    <string name="realFeelTemp">Real Feel:</string>
+    <string name="realFeelTemp">Real Feel: 11 ⁰С</string>
 </resources>

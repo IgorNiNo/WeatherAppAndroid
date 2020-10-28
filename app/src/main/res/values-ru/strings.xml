@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">Приложение о погоде</string>
     <string name="city">Нижний Новгород</string>
-    <string name="unitsTemp">⁰Ц</string>
-    <string name="minTemp">От</string>
-    <string name="maxTemp">До</string>
-    <string name="realFeelTemp">Ощущается как:</string>
+    <string name="currentTemp">10 ⁰Ц</string>
+    <string name="minTemp">От -1 ⁰Ц</string>
+    <string name="maxTemp">До 14 ⁰Ц</string>
+    <string name="realFeelTemp">Ощущается как: 11 ⁰Ц</string>
 </resources>
