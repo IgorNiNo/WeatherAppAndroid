@@ -33,4 +33,6 @@
     <string name="setupMenu">Настройки приложения о погоде</string>
     <string name="switch1">Темная тема</string>
     <string name="switch2">Автоматическое определение моего местоположения</string>
+    <string name="buttonOk">Да</string>
+    <string name="buttonEsc">Отмена</string>
 </resources>

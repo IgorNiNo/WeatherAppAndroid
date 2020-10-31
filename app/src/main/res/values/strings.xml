@@ -13,6 +13,8 @@
     <string name="setupMenu">Settings Weather App</string>
     <string name="switch1">Dark Theme</string>
     <string name="switch2">Automatically detecting my location</string>
+    <string name="buttonOk">Ok</string>
+    <string name="buttonEsc">Esc</string>
     <string name="city_name1">Arkhangelsk</string>
     <string name="city_name2">Barnaul</string>
     <string name="city_name3">Vladimir</string>
