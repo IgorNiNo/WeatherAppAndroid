@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Приложение о погоде</string>
+    <string name="city">Нижний Новгород</string>
+    <string name="currentTemp">Температура %d ⁰Ц</string>
+    <string name="minTemp">От %d ⁰Ц</string>
+    <string name="maxTemp">До %d ⁰Ц</string>
+    <string name="realFeelTemp">Ощущается как: %d ⁰Ц</string>
+    <string name="input_city">Введите город</string>
+    <string name="show_wind_speed">Скорость Ветра</string>
+    <string name="show_atmo_press">Атм. Давление</string>
+    <string name="change_city">Выберете город</string>
+    <string name="city_name1">Архангельск</string>
+    <string name="city_name2">Барнаул</string>
+    <string name="city_name3">Владимир</string>
+    <string name="city_name4">Иваново</string>
+    <string name="city_name5">Красноярск</string>
+    <string name="city_name6">Калуга</string>
+    <string name="city_name7">Казань</string>
+    <string name="city_name8">Липецк</string>
+    <string name="city_name9">Москва</string>
+    <string name="city_name10">Нижний Новгород</string>
+    <string name="city_name11">Новосибирск</string>
+    <string name="city_name12">Екатеринбург</string>
+    <string name="city_name13">Калининград</string>
+    <string name="city_name14">Иркутск</string>
+    <string name="city_name15">Санкт-Петербург</string>
+    <string name="city_name16">Уфа</string>
+    <string name="city_name17">Самара</string>
+    <string name="city_name18">Тверь</string>
+    <string name="city_name19">Сочи</string>
+    <string name="city_name20">Ярославль</string>
+    <string name="setupMenu">Настройки приложения о погоде</string>
+    <string name="switch1">Темная тема</string>
+    <string name="switch2">Автоматическое определение моего местоположения</string>
+</resources>

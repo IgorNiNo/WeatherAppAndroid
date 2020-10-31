@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonback1"
+        android:layout_width="@dimen/imagesize1"
+        android:layout_height="@dimen/imagesize1"
+        android:layout_marginStart="@dimen/marginsize1"
+        android:layout_marginTop="@dimen/marginsize2"
+        android:background="@android:drawable/ic_menu_revert"
+        app:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginsize3"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/input_city"
+        android:inputType="text"
+        android:textSize="@dimen/textsize1"
+        app:layout_constraintStart_toEndOf="@+id/buttonback1"
+        app:layout_constraintTop_toTopOf="@+id/buttonback1" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginsize3"
+        android:text="@string/show_wind_speed"
+        android:textSize="@dimen/textsize3"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsize1"
+        android:layout_marginEnd="@dimen/marginsize2"
+        android:text="@string/show_atmo_press"
+        android:textSize="@dimen/textsize3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputRegion" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginsize2"
+        android:layout_marginTop="@dimen/marginsize3"
+        android:layout_marginEnd="@dimen/marginsize2"
+        android:text="@string/change_city"
+        android:textSize="@dimen/textsize1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/marginsize1"
+        android:layout_marginBottom="@dimen/marginsize3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cityName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name1"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name2"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name3"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name4"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name5"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name6"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name7"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name8"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name9"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name10"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name11"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name12"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name13"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name14"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name15"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name16"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name17"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name18"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name19"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/cityName20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginsize1"
+                android:text="@string/city_name20"
+                android:textSize="@dimen/textsize2" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

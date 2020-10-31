@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">MyWeatherApp</string>
+    <string name="app_name">Weather App</string>
+    <string name="city">Nizhny Novgorod</string>
+    <string name="currentTemp">Temperature %d ⁰С</string>
+    <string name="minTemp">From %d ⁰С</string>
+    <string name="maxTemp">To %d ⁰С</string>
+    <string name="separator" translatable="false">|</string>
+    <string name="realFeelTemp">Real Feel: %d ⁰С</string>
+    <string name="input_city">Input City</string>
+    <string name="show_wind_speed">Wind Speed</string>
+    <string name="show_atmo_press">Atmo Press</string>
+    <string name="change_city">Change City</string>
+    <string name="setupMenu">Settings Weather App</string>
+    <string name="switch1">Dark Theme</string>
+    <string name="switch2">Automatically detecting my location</string>
+    <string name="city_name1">Arkhangelsk</string>
+    <string name="city_name2">Barnaul</string>
+    <string name="city_name3">Vladimir</string>
+    <string name="city_name4">Ivanovo</string>
+    <string name="city_name5">Krasnoyarsk</string>
+    <string name="city_name6">Kaluga</string>
+    <string name="city_name7">Kazan</string>
+    <string name="city_name8">Lipetsk</string>
+    <string name="city_name9">Moscow</string>
+    <string name="city_name10">Nizhny Novgorod</string>
+    <string name="city_name11">Novosibirsk</string>
+    <string name="city_name12">Ekaterinburg</string>
+    <string name="city_name13">kaliningrad</string>
+    <string name="city_name14">Irkutsk</string>
+    <string name="city_name15">Saint Petersburg</string>
+    <string name="city_name16">Ufa</string>
+    <string name="city_name17">Samara</string>
+    <string name="city_name18">Tver</string>
+    <string name="city_name19">Sochi</string>
+    <string name="city_name20">Yaroslavl</string>
 </resources>

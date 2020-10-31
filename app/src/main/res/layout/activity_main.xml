@@ -7,12 +7,94 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textStatic1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/separator"
+        android:textSize="@dimen/textsize2"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginsize1"
+        android:text="@string/minTemp"
+        android:textSize="@dimen/textsize2"
+        app:layout_constraintEnd_toEndOf="@id/textStatic1"
+        app:layout_constraintEnd_toStartOf="@+id/textStatic1"
+        app:layout_constraintTop_toTopOf="@+id/textStatic1" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginsize1"
+        android:text="@string/maxTemp"
+        android:textSize="@dimen/textsize2"
+        app:layout_constraintStart_toEndOf="@+id/textStatic1"
+        app:layout_constraintTop_toTopOf="@+id/textStatic1" />
+
+    <TextView
+        android:id="@+id/currentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginsize3"
+        android:text="@string/currentTemp"
+        android:textSize="@dimen/textsize1"
+        app:layout_constraintBottom_toTopOf="@+id/textStatic1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginsize2"
+        android:layout_marginTop="@dimen/marginsize2"
+        android:layout_marginBottom="@dimen/marginsize4"
+        android:text="@string/city"
+        android:textSize="@dimen/textsize1"
+        app:layout_constraintBottom_toTopOf="@+id/currentTemp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/realFeelTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsize1"
+        android:text="@string/realFeelTemp"
+        android:textSize="@dimen/textsize2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStatic1" />
+
+    <Button
+        android:id="@+id/changeRegion"
+        android:layout_width="@dimen/imagesize1"
+        android:layout_height="@dimen/imagesize1"
+        android:layout_marginEnd="@dimen/marginsize1"
+        android:background="@android:drawable/ic_menu_sort_by_size"
+        app:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toStartOf="@+id/menuConfig"
+        app:layout_constraintTop_toTopOf="@+id/city" />
+
+    <Button
+        android:id="@+id/menuConfig"
+        android:layout_width="@dimen/imagesize1"
+        android:layout_height="@dimen/imagesize1"
+        android:layout_marginEnd="@dimen/marginsize2"
+        android:background="@android:drawable/ic_menu_manage"
+        app:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/city" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

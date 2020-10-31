@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Text size-->
+    <dimen name="textsize1">24sp</dimen>
+    <dimen name="textsize2">18sp</dimen>
+    <dimen name="textsize3">12sp</dimen>
+    <!--Margins size-->
+    <dimen name="marginsize1">6dp</dimen>
+    <dimen name="marginsize2">12dp</dimen>
+    <dimen name="marginsize3">24dp</dimen>
+    <dimen name="marginsize4">100dp</dimen>
+    <!--Images size-->
+    <dimen name="imagesize1">40dp</dimen>
+</resources>
