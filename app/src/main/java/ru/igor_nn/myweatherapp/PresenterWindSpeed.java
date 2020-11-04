@@ -25,11 +25,9 @@ public final class PresenterWindSpeed {
         isWindSpeed = windSpeed;
     }
 
-    // Метод, который возвращает экземпляр объекта.
-    // Если объекта нет, то создаем его.
+    // Метод, который возвращает экземпляр объекта. Если объекта нет, то создаем его.
     public static PresenterWindSpeed getInstance(){
-        // Здесь реализована «ленивая» инициализация объекта,
-        // то есть, пока объект не нужен, не создаем его.
+        // Здесь реализована «ленивая» инициализация объекта, то есть, пока объект не нужен, не создаем его.
         synchronized (syncObj) {
             if (instance == null) {
                 instance = new PresenterWindSpeed();
@@ -37,5 +35,4 @@ public final class PresenterWindSpeed {
             return instance;
         }
     }
-
 }
