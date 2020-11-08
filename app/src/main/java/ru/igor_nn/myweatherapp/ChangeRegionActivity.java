@@ -4,35 +4,34 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
-
+import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ChangeRegionActivity extends AppCompatActivity {
-    private CheckBox check1;   // checkBox "Скорость ветра"
-    private CheckBox check2;   // checkBox "Атмосферное давление"
-    final PresenterWindSpeed windSpeed = PresenterWindSpeed.getInstance();  // Получить презентер "Скорость ветра"
-    final PresenterAtmoPress atmoPress = PresenterAtmoPress.getInstance();  // Получить презентер "Атмосферное давление"
+public class ChangeRegionActivity extends AppCompatActivity implements Constants {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_region);
 
-        check1 = findViewById(R.id.checkBox1);   // checkBox "Скорость ветра"
-        check2 = findViewById(R.id.checkBox2);   // checkBox "Атмосферное давление"
-        check1.setChecked(windSpeed.isWindSpeed());
-        check2.setChecked(atmoPress.isAtmoPress());
+        Parcel parcel = (Parcel) getIntent().getExtras().getSerializable(TEXT); //получить данные из Intent
+        EditText editTextChangeCity = findViewById(R.id.inputRegion);
+        editTextChangeCity.setText(parcel.textCity); // Сохранить их в EditText
 
         Button button3 = findViewById(R.id.buttonback1);
         button3.setOnClickListener(v -> {
-            startActivity(new Intent(ChangeRegionActivity.this, MainActivity.class));
+            EditText editText = (EditText) findViewById(R.id.inputRegion);
+            CheckBox check1 = findViewById(R.id.checkBox1);   // checkBox "Скорость ветра"
+            Intent intentResult = new Intent();
+            intentResult.putExtra("TextCity", editText.getText().toString());
+            intentResult.putExtra("TempActual", "-1");
+            intentResult.putExtra("TempMin", "-4");
+            intentResult.putExtra("TempMax", "3");
+            intentResult.putExtra("TempReal", "-2");
+            intentResult.putExtra("Text1", check1.getText());
+            intentResult.putExtra("IsBool", check1.isChecked());
+            setResult( RESULT_OK , intentResult);
+            finish();
         });
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle saveInstanceState){
-        super.onSaveInstanceState(saveInstanceState);
-        windSpeed.setWindSpeed(check1.isChecked());
-        atmoPress.setAtmoPress(check2.isChecked());
     }
 }

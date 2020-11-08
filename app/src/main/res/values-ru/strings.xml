@@ -2,10 +2,10 @@
 <resources>
     <string name="app_name">Приложение о погоде</string>
     <string name="city">Нижний Новгород</string>
-    <string name="currentTemp">Температура %d ⁰Ц</string>
-    <string name="minTemp">От %d ⁰Ц</string>
-    <string name="maxTemp">До %d ⁰Ц</string>
-    <string name="realFeelTemp">Ощущается как: %d ⁰Ц</string>
+    <string name="currentTemp">Температура %s ⁰Ц</string>
+    <string name="minTemp">От %s ⁰Ц</string>
+    <string name="maxTemp">До %s ⁰Ц</string>
+    <string name="realFeelTemp">Ощущается как: %s ⁰Ц</string>
     <string name="input_city">Введите город</string>
     <string name="show_wind_speed">Скорость Ветра</string>
     <string name="show_atmo_press">Атм. Давление</string>
