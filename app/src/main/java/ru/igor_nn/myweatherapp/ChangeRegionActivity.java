@@ -8,6 +8,11 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ChangeRegionActivity extends AppCompatActivity implements Constants {
+    //временное решение, пока не знаю как взять актуальные данные с метеостанции
+    private final String TEMP_ACTUAL = "-1";
+    private final String TEMP_MIN = "-4";
+    private final String TEMP_MAX = "3";
+    private final String TEMP_REAL_FEEL = "-2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +29,10 @@ public class ChangeRegionActivity extends AppCompatActivity implements Constants
             CheckBox check1 = findViewById(R.id.checkBox1);   // checkBox "Скорость ветра"
             Intent intentResult = new Intent();
             intentResult.putExtra("TextCity", editText.getText().toString());
-            intentResult.putExtra("TempActual", "-1");
-            intentResult.putExtra("TempMin", "-4");
-            intentResult.putExtra("TempMax", "3");
-            intentResult.putExtra("TempReal", "-2");
+            intentResult.putExtra("TempActual", TEMP_ACTUAL);
+            intentResult.putExtra("TempMin", TEMP_MIN);
+            intentResult.putExtra("TempMax", TEMP_MAX);
+            intentResult.putExtra("TempReal", TEMP_REAL_FEEL);
             intentResult.putExtra("Text1", check1.getText());
             intentResult.putExtra("IsBool", check1.isChecked());
             setResult( RESULT_OK , intentResult);
